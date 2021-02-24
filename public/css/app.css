@@ -1,0 +1,25 @@
+body {
+  margin: 1rem auto;
+  max-width: 700px;
+  background: #fafafa;
+  font-family: sans-serif;
+}
+
+input[type=submit] {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background: black;
+  color: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

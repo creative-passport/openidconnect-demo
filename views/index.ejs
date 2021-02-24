@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creative Passport OIDC Demo</title>
+  <link href="/css/normalize.css" rel="stylesheet">
+  <link href="/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Creative Passport OpenID Connect Demo</h1>
+  <p>
+    This is a simple demo which uses OpenID connect to sign into <a href="https://www.creativepassport.net/">The Creative Passport</a>.
+  </p>
+  <h2>Authentication status</h2>
+  <% if (isAuthenticated) { %>
+    <p>You are signed in using OpenID connect!</p>
+    <div class="center">
+      <form action="/logout" method="POST">
+        <input type="submit" value="Logout">
+      </form>
+    </div>
+  <% } else { %>
+    <p>You are logged out. Click the button below to sign in using OpenID connect.</p>
+    <div class="center">
+      <form action="/login" method="POST">
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  <% } %>
+</body>
+
+</html>

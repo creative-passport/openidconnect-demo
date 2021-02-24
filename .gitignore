@@ -1,0 +1,16 @@
+# dependencies
+/node_modules
+
+# build path
+dist/
+
+tmp/
+temp/
+
+# misc
+.DS_Store
+.env
+
+npm-debug.log*
+
+.vscode
